@@ -23,3 +23,9 @@ for(let i = 0; i < listTodo.length; i++) {
     `
     $('.content-table').append(divTable)
 }
+
+$('#button').on('click', function(){
+    let button = $('#typeTask').val()
+    console.log(button)
+})
+

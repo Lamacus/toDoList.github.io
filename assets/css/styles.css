@@ -2,6 +2,49 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    background: #1d2026;
+}
+
+.box {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box input,
+.box button {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.box input[type="text"] {
+    background: #fff;
+    width: 290px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.box button {
+    position: relative;
+    left: -5px;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #ffc107;
+    color: #fff;
+}
+
+.box button:hover {
+    background: #ff5722;
 }
 
 .content-table {
@@ -10,56 +53,22 @@
     min-width: 400px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+    margin: 8% auto;
 }
   
-
 .content-table th,
 .content-table td {
     padding: 12px 15px;
+    background: #fff;
 }
   
 .content-table tbody tr {
     border-bottom: 1px solid #dddddd;
 }
 
-.addTask input {
-    margin-top: 20px;
-    position: relative;
-    display: inline-block;
-    font-size: 20px;
-    left: 39%;
-    transition: .5s;
-}
 
-input[type="text"] {
-    width: 250px;
-    height: 30px;
-    border: 1px solid black;
-    border-right: none;
-    outline: none;
-    padding: 0 25px;
-    border-radius: 25px 0 0 25px;
-    background: #fff;
-}
 
-input[type="submit"] {
-    position: relative;
-    border-radius: 0 25px 25px 0;
-    width: 100px;
-    height: 30px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: #ffc107;
-    color: #fff;
-}
-
-input[type="submit"]:hover {
-    background: #ff5722;
-    color: #fff;
-}
 
 
 
