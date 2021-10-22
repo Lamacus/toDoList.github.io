@@ -115,7 +115,7 @@ tr .modify {
 }
 
 nav {
-    background-image: url('/assets/img/circle.png');
+    background-image: url('https://lamacus.github.io/assets/img/circle.png');
     background-size: cover;
     background-position: right;
     padding: 10% 5% 10% 15%;
