@@ -1,13 +1,16 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
     background: #1d2026;
+}
+
+body {
+    background: none;
 }
 
 .box {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -22,7 +25,7 @@
 
 .box input[type="text"] {
     background: #fff;
-    width: 290px;
+    width: 320px;
     height: 50px;
     border: none;
     outline: none;
@@ -32,7 +35,7 @@
 
 .box button {
     position: relative;
-    left: -5px;
+    left: -6px;
     border-radius: 0 25px 25px 0;
     width: 100px;
     height: 50px;
@@ -41,6 +44,7 @@
     cursor: pointer;
     background: #ffc107;
     color: #fff;
+    top: 0px;
 }
 
 .box button:hover {
@@ -54,7 +58,7 @@
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
-    margin: 8% auto;
+    margin: 10% auto;
 }
   
 .content-table th,
@@ -67,9 +71,139 @@
     border-bottom: 1px solid #dddddd;
 }
 
+#deleteAll {
+    position: absolute;
+    left: 39%;
+    top: 13%;
+}
 
+#deleteAll,
+tr .delete,
+tr .modify {
+    color: #fff;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
 
+#deleteAll,
+tr .delete {
+    background-color: #ff5722;
+}
 
+tr .modify {
+    background-color: #1471CD;
+}
 
+#exampleModalLabel,
+.modal-header,
+#newTypeTask,
+.modal-body,
+.modal-footer {
+    background: #fff;
+}
 
-  
+.modal-footer .btn-primary {
+    background: #84B616;
+    border: none;
+}
+
+.red {
+    background: #ff5722;
+}
+
+nav {
+    background-image: url('/assets/img/circle.png');
+    background-size: cover;
+    background-position: right;
+    padding: 10% 5% 10% 15%;
+    position: absolute;
+    left: -10%;
+    top: -12%;
+}
+
+.logo {
+    width: 60px;
+    margin-bottom: 20px;
+    background: red;
+    position: relative;
+    left: -20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 0;
+    background: red;
+}
+
+ul {
+    padding-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    background: red;
+    font-weight: 600;
+    position: absolute;
+    bottom: 145px;
+    left: 250px;
+}
+
+nav ul li a:hover {
+    color: #fff
+}
+
+.checkAll {
+    position: absolute;
+    left: 30%;
+    top: 160%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+}
+
+.checkAll input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+label {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.checkAll input[type="checkbox"]::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+    display: none;
+}
+
+.checkAll input[type="checkbox"]:hover {
+    background: #a5a5a5;
+}
+
+.checkAll input[type="checkbox"]:checked {
+    background: #5bcd3e;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
