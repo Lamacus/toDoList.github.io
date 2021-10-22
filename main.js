@@ -95,7 +95,9 @@ $('#button').on('click', function(){
 $('button[confirm="confirm"]').on('click', function() {
     let newTypeTask = $('#newTypeTask').val()
     let index = $(this).attr('index')
-    listTodo[index].work = newTypeTask
+    if(newTypeTask === ''){
+        $('.emty').css({'data-bs-dismiss': 'none'})
+    } else listTodo[index].work = newTypeTask
     render()
 })
 
